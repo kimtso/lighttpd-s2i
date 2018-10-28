@@ -22,9 +22,9 @@ fi
 echo "---> Installing Application source..."
 cp -Rf /tmp/src/test/test-app/ ./
 echo "---> Emptyinng file directory..."
-rm -rf ./
+rm -rf /opt/app-root/src
 echo "---> Move file..."
-mv /tmp/src/test/test-app/index.html ./
+mv /tmp/src/test/test-app/index.html /opt/app-root/src
 
 echo "---> chmod of directory..."
 chmod -R +r /opt/app-root/src
